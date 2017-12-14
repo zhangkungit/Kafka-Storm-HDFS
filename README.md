@@ -122,28 +122,5 @@ bolt.hdfs.file.system.url= Hadoop File System URL.
 * [Storm](http://storm.apache.org/) - Apache Storm is a free and open source distributed realtime computation system.
 * [Hadoop](http://hadoop.apache.org/) - Hadoop Distributed File System (HDFS™): A distributed file system that provides high-throughput access to application data. 
 
-## Contributing
-
-
-## Versioning
-
-
-
-## Authors
-
-* **Viyaan Jhiingade** - *Initial work* - [Viyaan](https://github.com/Viyaan)
-
-
-
-## License
-
-
-
-## Acknowledgments
-
-* Hat tip to anyone who's code was used
-* Inspiration
-* etc
-
 
 
