@@ -40,7 +40,7 @@ public class SendMessageKafka {
 
             StringBuffer data = new StringBuffer();
             data.append(String.valueOf(id)).append("\t")
-                    .append(String.valueOf(memberid).concat("坤")).append("\t")
+                    .append(String.valueOf(memberid)).append("\t")
                     .append(String.valueOf(totalprice)).append("\t")
                     .append(String.valueOf(preferential)).append("\t")
                     .append(String.valueOf(sendpay)).append("\t")
