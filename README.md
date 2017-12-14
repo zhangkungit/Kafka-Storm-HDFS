@@ -40,12 +40,11 @@ bolt.hdfs.field.delimiter=   Will write pipe("|")-delimited files to the HDFS.
 
 bolt.hdfs.batch.size = This size denotes After it reaches the specified tuples it will sync filesystem.
 
+size跟time都是滚动策略，二选一
 bolt.hdfs.file.rotation.size.in.mb  = It will rotate files when they reach the megabytes in size.
-
 bolt.hdfs.file.rotation.time.min= It will rotate files when they reach the time.
 
 bolt.hdfs.wip.file.path= Destination path in hdfs.
-
 bolt.hdfs.finished.file.path = Destination where files are moved after rotation size or time limit is reached.
 
 bolt.hdfs.file.system.url= Hadoop File System URL.
@@ -58,8 +57,11 @@ bolt.hdfs.file.system.url= Hadoop File System URL.
 
 ## Dependencies
 
-
-	   <dependencies>
+    主要是storm版本，storm.version：1.1.1
+    但是hadoop要根据实际安装的版本来，比如我本地安装的是2.6.0.2.2.9.0-3393版本，
+    我现在2.6.1的hadoop版本，hadoop.version: 2.6.1
+	 
+	<dependencies>
       <dependency>
          <groupId>org.apache.hadoop</groupId>
          <artifactId>hadoop-client</artifactId>
